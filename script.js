@@ -15,6 +15,7 @@ function checkCode() {
 	  	alert('you get eaten by an ogre, you failed');
 	  }
 	if (d === 37) {
+		level=2;
 		$('#wood').html('you meet a dwarf and he gives you a sword! You can now go back');
 
 	}
