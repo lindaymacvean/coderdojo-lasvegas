@@ -2,13 +2,15 @@
 alert('hello');
 
 
-var d = prompt('hello tell me your name?');
+var d;
+
+document.write('You are in a dark wood choose left or right');
 
 //Lets add the keyboard controls now
 $( document ).keydown(function(e) {
-  alert( "You just pressed key number: "+e.keyCode );
-  if (e.keyCode === 38) {
-  	alert('you failed');
-  }
+  d = e.keyCode;
 });
 
+if (d === 38) {
+  	alert('you failed');
+  }
