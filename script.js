@@ -19,4 +19,8 @@ function checkCode() {
 		$('#wood').html('you meet a dwarf and he gives you a sword! You can now go back');
 
 	}
+	if (d === 40 ) {
+		level=1;
+		$('#wood').html('You are in a dark wood choose left or right');
+	}
 }
