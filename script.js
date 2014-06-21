@@ -3,6 +3,9 @@ var d;
 var level = 1;
 var sword = false;
 var ogre = 'ogre.jpg';
+var dwarf = 'dwarf.jpg';
+var money = 'money.jpg';
+
 
 
 $('#wood').html('You are in a dark wood choose left or right');
