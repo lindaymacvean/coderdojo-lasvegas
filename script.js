@@ -13,10 +13,10 @@ $( document ).keydown(function(e) {
 
 function checkCode() {
 	if (level === 1 && d === 39 && sword === false ) {
-	  	alert('you get eaten by an ogre, you failed');
+	  	$('#wood').html('you get eaten by an ogre, you failed');
 	  }
 	else if (level === 1 && d === 39 && sword === true) {
-		alert('You slay the ogre and get some money');
+		$('#wood').html('You slay the ogre and get some money');
 
 	}
 	if (d === 37) {
