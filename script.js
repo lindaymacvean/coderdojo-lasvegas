@@ -1,5 +1,6 @@
 
 var d;
+var level = 1;
 
 $('#wood').html('You are in a dark wood choose left or right');
 
@@ -10,11 +11,11 @@ $( document ).keydown(function(e) {
 });
 
 function checkCode() {
-	if (d === 38) {
-	  	alert('you failed');
+	if (level === 1 && d === 39 ) {
+	  	alert('you get eaten by an ogre, you failed');
 	  }
 	if (d === 37) {
-		document.write('you meet a dwarf and he gives you a sword! You can now go back');
+		$('#wood').html('you meet a dwarf and he gives you a sword! You can now go back');
 
 	}
 }
