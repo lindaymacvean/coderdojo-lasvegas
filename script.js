@@ -14,6 +14,11 @@ $( document ).keydown(function(e) {
 function checkCode() {
 	if (level === 1 && d === 39 && sword === false ) {
 	  	$('#wood').html('you get eaten by an ogre, you failed');
+	  	setTimeout(
+	  		function () { location.reload(); },
+	  		1000
+	  	);
+
 	  }
 	else if (level === 1 && d === 39 && sword === true) {
 		$('#wood').html('You slay the ogre and get some money');
