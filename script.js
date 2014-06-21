@@ -2,6 +2,7 @@
 var d;
 var level = 1;
 var sword = false;
+var ogre = '<img src="ogre.jpg" />';
 
 $('#wood').html('You are in a dark wood choose left or right');
 
@@ -13,7 +14,7 @@ $( document ).keydown(function(e) {
 
 function checkCode() {
 	if (level === 1 && d === 39 && sword === false ) {
-	  	$('#wood').html('you get eaten by an ogre, you failed');
+	  	$('#wood').html('you get eaten by an ogre, you failed'+ogre);
 	  	setTimeout(
 	  		function () { location.reload(); },
 	  		1000
