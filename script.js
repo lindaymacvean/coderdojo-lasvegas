@@ -12,15 +12,22 @@ $('#wood').html('You are in a dark wood choose left or right');
 
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext('2d');
-canvas.width = 512;
-canvas.height = 480;
+canvas.width = 800;
+canvas.height = 600;
 document.body.appendChild(canvas);
 
 function loadCanvas (dataURL) {
 	var imageObj = new Image();
-	imageObj.onload = function() {
-		ctx.drawImage(this,0,0)
-	};
+	if (dataURL === ogre ) {
+		imageObj.onload = function() {
+			ctx.drawImage(this,480,270,50,50)
+		};
+	}
+	else {
+		imageObj.onload = function() {
+			ctx.drawImage(this,0,0)
+		};
+	}
 	imageObj.src = dataURL;
 }
 loadCanvas(woods);
