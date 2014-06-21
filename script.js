@@ -15,10 +15,14 @@ function checkCode() {
 	if (level === 1 && d === 39 && sword === false ) {
 	  	alert('you get eaten by an ogre, you failed');
 	  }
-	else if (level === 1 && d === 39 && sword === true)
+	else if (level === 1 && d === 39 && sword === true) {
+		alert('You slay the ogre and get some money');
+
+	}
 	if (d === 37) {
 		level=2;
 		$('#wood').html('you meet a dwarf and he gives you a sword! You can now go back');
+		sword = true;
 
 	}
 	if (d === 40 ) {
