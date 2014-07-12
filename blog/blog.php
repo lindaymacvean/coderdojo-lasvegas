@@ -2,18 +2,16 @@
 // index.php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-$link = mysql_connect('localhost', 'healtiz9_lv2', 'coderdojo');
-mysql_select_db('healtiz9_coderdojo', $link);
-
-$result = mysql_query('SELECT id, title FROM post', $link);
+$link = mysql_connect('localhost', 'Derp_Admin', '');
+mysql_select_db('derp', $link);
+$result = mysql_query('SELECT id, title FROM blog', $link);
 
 $posts = array();
-while ($row = mysql_fetch_assoc($result)) {
+while($row = mysql_fetch_assoc($result)) {
 	$posts[] = $row;
 }
 
+require 'templates/list.php';
+
 mysql_close($link);
-
-require 'templates/list.php'
-
 ?>

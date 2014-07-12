@@ -4,17 +4,15 @@
 <title>List of Posts</title>
 </head>
 <body>
-<h1>List of Posts</h1>
-<ul>
-
-<?php while ($row = mysql_fetch_assoc($result)): ?>
-
-<li>
-<a href="/show.php?id=<?php echo $row['id'] ?>">
-<?php echo $row['title'] ?>
-</a>
-</li>
-<?php endwhile; ?>
-</ul>
+	<h1>List of Posts</h1>
+	<ul>
+		<?php foreach ($posts as $post): ?>
+		<li>
+			<a href="/read.php?id=<?php echo $post['id'] ?>">
+				<?php echo $post['title'] ?>
+			</a>
+		</li>
+		<?php endforeach; ?>
+	</ul>
 </body>
 </html>
