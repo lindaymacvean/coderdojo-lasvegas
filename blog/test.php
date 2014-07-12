@@ -1,10 +1,9 @@
 <?php
 // Create connection
-echo 'test';
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 $hostname = 'localhost';
-$username = 'healtiz9_lv1';
+$username = 'healtiz9_lv2';
 $password = 'coderdojo';
 $database = 'healtiz9_coderdojo';
 
