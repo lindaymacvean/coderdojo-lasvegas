@@ -1,7 +1,9 @@
 <?php
 // index.php
-$link = mysql_connect('localhost', 'healtiz_lv1', 'healtiz9_coderdojo');
-mysql_select_db('_coderdojo', $link);
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+$link = mysql_connect('localhost', 'healtiz9_lv2', 'coderdojo');
+mysql_select_db('healtiz9_coderdojo', $link);
 $result = mysql_query('SELECT id, title FROM post', $link);
 ?>
 <!DOCTYPE html>
